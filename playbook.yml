@@ -1,0 +1,17 @@
+---
+- name: eval-devops
+  hosts: all
+  tasks:
+    - name: Pull Camioned Docker image
+      docker_image:
+        name: camioned-front:latest
+        source: registry.example.com
+
+    - name: Run Camioned Docker container
+      docker_container:
+        name: camioned-front
+        image: camioned-front:latest
+        ports:
+          - "80:80"
+        volumes:
+          - /var/www:/var/www
