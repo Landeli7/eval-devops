@@ -5,7 +5,7 @@
     - name: Pull Camioned Docker image
       docker_image:
         name: camioned-front:latest
-        source: ghcr.io/Landeli7/camioned-front:latest
+        source: ghcr.io/denwo-1/camioned-front:latest
 
     - name: Run Camioned Docker container
       docker_container:
