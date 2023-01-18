@@ -18,9 +18,10 @@ Requirement : github token
 Login to the github registry with the token : 
 `docker login ghcr.io --username github-account`
 
+Check the image id of the project : `docker images`
+
 Use the following command to tag the Docker image : `docker tag image-id ghcr.io/github-account/camioned-front:lastest`
 
-Verify if it is correct by listing the images : `docker images`
 
 Then, push the image to the registry :
 `docker push ghcr.io/github-account/camioned-front:lastest`
