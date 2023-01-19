@@ -6,6 +6,18 @@
 * Ansible
 * [Github Container Registry](https://ghcr.io)
 
+## Install Docker on Linux
+
+Go to this page and follow the instructions :
+https://docs.docker.com/engine/install/ubuntu/
+
+## Start Docker Daemon 
+Use the following command to run the Docker Daemon :
+`sudo systemctl start docker`
+
+If this command does not work, use this :
+`service docker start`
+
 ## Build docker image
 
 Build the image : `docker build --tag camioned-front .`
