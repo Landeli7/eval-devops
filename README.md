@@ -21,14 +21,7 @@ Docker is a software platform that allows you to build, test, and deploy applica
 ### Github Packages (Registry)
 GitHub Packages is a platform for hosting and managing packages, including containers and other dependencies..
 
-```dockerfile
-FROM nginx
-COPY ./* /usr/share/nginx/html
 
-EXPOSE 80
-
-CMD ["nginx","-g","daemon off;"]
-```
 
 ## Install Docker on Linux
 
@@ -42,7 +35,18 @@ Use the following command to run the Docker Daemon :
 If this command does not work, use this :
 `service docker start`
 
-## Build docker image
+
+
+## Create & Build docker image
+Create the docker image
+```dockerfile
+FROM nginx
+COPY ./* /usr/share/nginx/html
+
+EXPOSE 80
+
+CMD ["nginx","-g","daemon off;"]
+```
 
 Build the image : `docker build --tag camioned-front .`
 
