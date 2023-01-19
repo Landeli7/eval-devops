@@ -2,7 +2,7 @@
 
 ## Used technologies
 
-* Docker ![Docker](https://www.google.com/url?sa=i&url=https%3A%2F%2Faws.amazon.com%2Ffr%2Fdocker%2F&psig=AOvVaw3pC9Lykadxj6gq2aeSxrBs&ust=1674218155392000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCOixtOTS0_wCFQAAAAAdAAAAABAE)).
+* Docker ![docker](https://user-images.githubusercontent.com/75745971/213444827-34c9cb87-167a-46cf-a66d-44820f81d6e6.png)
 * Ansible
 * [Github Container Registry](https://ghcr.io)
 
