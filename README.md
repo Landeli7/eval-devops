@@ -6,6 +6,27 @@
 * Ansible
 * [Github Container Registry](https://ghcr.io)
 
+### Ansible
+Ansible is a way to automate apps and IT infrastructure.  It is used for continuous delivery of software code by taking advantage of an “infrastructure as code” approach.
+
+Keyword : Application Deployment, Configuration Management, Continuous Delivery.
+
+### Docker
+Docker is a software platform that allows you to build, test, and deploy applications quickly. Docker packages software into standardized units called containers that have everything the software needs to run including libraries, system tools, code, and runtime.
+
+### Github Packages (Registry)
+GitHub Packages is a platform for hosting and managing packages, including containers and other dependencies..
+
+```dockerfile
+FROM nginx
+COPY ./* /usr/share/nginx/html
+
+EXPOSE 80
+
+CMD ["nginx","-g","daemon off;"]
+```
+
+
 ## Build docker image
 
 Build the image : `docker build --tag camioned-front .`
