@@ -52,3 +52,7 @@ To do that, you can use this command (with pip installed):
 All you have to do is run the following command : 
 
 `ansible-playbook playbook.yml`
+
+## Conclusion
+
+Despite a problem encountered when retrieving our docker hosted on the Container Registery so that it could be deployed by Ansible, we learned, thanks to this mini-project, to generate and upload a docker image on Github Container Registery which serves as a container host. In a second step, we were able to discover how Ansible works by writing a Playbook.yml script. 
