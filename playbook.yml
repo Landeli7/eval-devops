@@ -4,7 +4,8 @@
   tasks:
     - name: Pull Camioned Docker image
       docker_image:
-        name: camioned-front:latest
+        name: ghcr.io/denwo-1/camioned-front
+        tag: latest
         source: pull
         repository: ghcr.io/denwo-1/camioned-front:latest
 
