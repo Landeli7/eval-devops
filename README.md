@@ -1,9 +1,13 @@
 # eval-devops
 
+## Introduction
+We created a Docker image that we put into a Github Container Registry. 
+There is also a Ansible script we used to pull the image from this Container Registry.
+
 ## Used technologies
 
-* Docker
-* Ansible
+* Docker 
+* Ansible 
 * [Github Container Registry](https://ghcr.io)
 
 ### Ansible
@@ -26,6 +30,17 @@ EXPOSE 80
 CMD ["nginx","-g","daemon off;"]
 ```
 
+## Install Docker on Linux
+
+Go to this page and follow the instructions :
+https://docs.docker.com/engine/install/ubuntu/
+
+## Start Docker Daemon 
+Use the following command to run the Docker Daemon :
+`sudo systemctl start docker`
+
+If this command does not work, use this :
+`service docker start`
 
 ## Build docker image
 
@@ -34,7 +49,7 @@ Build the image : `docker build --tag camioned-front .`
 Test the image : `docker run -p 80:80 camioned-front`
 
 ## Send the image to registry
-Requirement : github token
+Requirement : github classic token with package W/R rights
 
 Login to the github registry with the token : 
 `docker login ghcr.io --username github-account`
@@ -57,3 +72,7 @@ To do that, you can use this command (with pip installed):
 All you have to do is run the following command : 
 
 `ansible-playbook playbook.yml`
+
+## Conclusion
+
+Despite a problem encountered when retrieving our docker hosted on the Container Registery so that it could be deployed by Ansible, we learned, thanks to this mini-project, to generate and upload a docker image on Github Container Registery which serves as a container host. In a second step, we were able to discover how Ansible works by writing a Playbook.yml script. 
