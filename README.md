@@ -13,7 +13,7 @@ Build the image : `docker build --tag camioned-front .`
 Test the image : `docker run -p 80:80 camioned-front`
 
 ## Send the image to registry
-Requirement : github token
+Requirement : github classic token with package W/R rights
 
 Login to the github registry with the token : 
 `docker login ghcr.io --username github-account`
