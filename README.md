@@ -6,7 +6,7 @@ There is also a Ansible script we used to pull the image from this Container Reg
 
 ## Used technologies
 
-* Docker
+* Docker ![docker](https://user-images.githubusercontent.com/75745971/213444827-34c9cb87-167a-46cf-a66d-44820f81d6e6.png)
 * Ansible
 * [Github Container Registry](https://ghcr.io)
 
