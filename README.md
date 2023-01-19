@@ -1,7 +1,7 @@
 # eval-devops
 
 ## Introduction
-We created a Docker image that we put into a Github Container Registry. 
+We created a Docker image of a static website that we put into a Github Container Registry. 
 There is also a Ansible script we used to pull the image from this Container Registry.
 
 ## Used technologies
